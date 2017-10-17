@@ -1,0 +1,53 @@
+{
+  "WELCOME_INTRO": "Social app for interaction of",
+  "WELCOME_SUBINTRO": "Sales Promotors",
+
+  "LOGIN": "Login with Facebook ",
+  "TERMOS_POLITICA": "Terms of Service and Privacy Policy",
+
+
+  "FEED_TITLE": "Feed",
+  "CHALLENGE_TITLE": "PROmov Club",
+  "INBOX_TITLE": "Inbox",
+  "CONFIG_TITLE": "Settings",
+  "PERFIL_TITLE": "Perfil",
+  "LOGOUT_TITLE": "Logout",
+
+  "CHALLENGE_CHOOSE_PHOTO": "Escolha uma foto",
+  "CHALLENGE_WORKTYPE": "Type of work",
+  "CHALLENGE_SUPERMARKET": "Market Net",
+  "CHALLENGE_BRAND": "Brand",
+  "CHALLENGE_STORE": "Store",
+  "CHALLENGE_CHECKBOX": "Publish in PROmov Club",
+
+  "CHALLENGE_WORKTYPE": "Type of work",
+  "CHALLENGE_SUPERMARKET": "Supermarket",
+  "CHALLENGEWORK_BRAND": "Brand",
+  "CHALLENGEWORK_STORE": "Store",
+
+  "CHALLENGE_BUTTON": "Publish",
+
+  "FEED_LIKES": "Likes",
+  "FEED_COMMENTS": "Comments",
+
+  "PERFIL_MEMBER": "Member since",
+  "PERFIL_LEVEL": "Level",
+  "PERFIL_POSITION": "Position",
+  "PERFIL_POINTS": "Your points",
+
+  "CONFIG_LANGUAGE": "Language",
+  "M_JAN": "Jan",
+  "M_FEB": "Feb",
+  "M_MAR": "Mar",
+  "M_APRIL": "Apr",
+  "M_May": "May",
+  "M_JUNE": "Jun",
+  "M_JULY": "Jul",
+  "M_AUGUST": "Aug",
+  "M_SEPTEMBER": "Sep",
+  "M_OCTOBER": "Oct",
+  "M_NOVEMBER": "Nov",
+  "M_DECEMBER": "Dec",
+
+  "BACK_BUTTON_TEXT": "Back"
+}

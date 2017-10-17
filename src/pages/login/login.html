@@ -1,0 +1,15 @@
+<ion-content scroll="false" class="splash-bg">
+  <div class="splash-info">
+    <div class="splash-intro">
+      <span>{{ 'WELCOME_INTRO' | translate }}</span>
+      <span>{{ 'WELCOME_SUBINTRO' | translate }}</span>
+    </div>
+    <div class="splash-logo"></div>
+    <div class="splash-c-button" padding>
+      <button ion-button round (click)="loginFacebook()" class="splash-button">
+        {{ 'LOGIN' | translate }} 
+        <ion-icon name="logo-facebook" class="splash-icon-fb"></ion-icon></button>
+    </div>
+    <div class="splash-termos">{{ 'TERMOS_POLITICA' | translate }}</div>
+  </div>
+</ion-content>

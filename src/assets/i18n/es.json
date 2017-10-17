@@ -1,0 +1,48 @@
+{
+  "WELCOME_INTRO": "Aplicación social para la interacción de",
+  "WELCOME_SUBINTRO": "Promotores de ventas",
+
+  "LOGIN": "Iniciar sesión con Facebook",
+  "TERMOS_POLITICA": "Condiciones de servicio y política de privacidad",
+
+
+  "FEED_TITLE": "Feed",
+  "CHALLENGE_TITLE": "PROmov Club",
+  "INBOX_TITLE": "Bandeja de entrada",
+  "CONFIG_TITLE": "Configuración",
+  "PERFIL_TITLE": "Perfil",
+  "LOGOUT_TITLE": "Cerrar sesión",
+
+  "CHALLENGE_CHOOSE_PHOTO": "Seleccione una foto",
+  "CHALLENGE_WORKTYPE": "Tipo de trabajo",
+  "CHALLENGE_SUPERMARKET": "Mercado de la red",
+  "CHALLENGE_BRAND": "Marca",
+  "CHALLENGE_STORE": "Almacenar",
+  "CHALLENGE_CHECKBOX": "Publicar en PROmov Club",
+
+  "CHALLENGE_BUTTON": "Publicar",
+
+  "FEED_LIKES": "Me gusta",
+  "FEED_COMMENTS": "Comentarios",
+
+  "PERFIL_MEMBER": "Miembro desde",
+  "PERFIL_LEVEL": "Nivel",
+  "PERFIL_POSITION": "Posición",
+  "PERFIL_POINTS": "Sus puntos",
+
+  "CONFIG_LANGUAGE": "Idioma",
+  "M_JAN": "Ene",
+  "M_FEB": "Feb",
+  "M_MAR": "Mar",
+  "M_APRIL": "Abr",
+  "M_May": "May",
+  "M_JUNE": "Jun",
+  "M_JULY": "Jul",
+  "M_AUGUST": "Ago",
+  "M_SEPTEMBER": "Sep",
+  "M_OCTOBER": "Oct",
+  "M_NOVEMBER": "Nov",
+  "M_DECEMBER": "Dic",
+
+  "BACK_BUTTON_TEXT": "Volver"
+}

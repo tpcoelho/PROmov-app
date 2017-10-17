@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'FEED_TITLE' | translate }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="md-camera"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <div *ngFor="let feedItem of feedItems">
+    <ion-card *ngIf="!feedItem.isBlog; else cardBlogTemplate">
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{feedItem.userPhoto}}">
+        </ion-avatar>
+        <h2>{{feedItem.userName}}</h2>
+        <p><ion-icon name='md-pin'></ion-icon> {{feedItem.store}} - {{feedItem.address[0].city}}/{{feedItem.address[0].stateShort}}</p>
+      </ion-item>
+
+      <img class="card-img" src="http://gmreis-eng-br.umbler.net/upload/{{feedItem.photos[0]}}">
+
+      <ion-row>
+        <ion-col>
+          <button ion-button color="primary" clear small icon-start style="text-transform: none;" >
+            <ion-icon name='thumbs-up'></ion-icon>
+            {{feedItem.likes}} {{ 'FEED_LIKES' | translate }}
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button color="primary" clear small icon-start style="text-transform: none;" >
+            <ion-icon name='text'></ion-icon>
+            {{feedItem.comments.length }} {{ 'FEED_COMMENTS' | translate }}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ng-template #cardBlogTemplate>
+      <ion-card>
+        <ion-item color="orange">
+          <h2>{{feedItem.title}}</h2>
+        </ion-item>
+
+        <img class="card-img" src="http://gmreis-eng-br.umbler.net/upload/{{feedItem.photos[0]}}">
+      </ion-card>
+    </ng-template>
+  </div>
+  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+</ion-content>

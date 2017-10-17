@@ -1,0 +1,52 @@
+{
+  "WELCOME_INTRO": "App social de interação entre",
+  "WELCOME_SUBINTRO": "Promotores de Vendas",
+  "LOGIN": "Entrar com Facebook ",
+  "TERMOS_POLITICA": "Termos de serviço e Politica de Privacidade",
+
+  "FEED_TITLE": "Feed",
+  "CHALLENGE_TITLE": "PROmov Club",
+  "INBOX_TITLE": "Mensagens",
+  "CONFIG_TITLE": "Configurações",
+  "PERFIL_TITLE": "Perfil",
+  "LOGOUT_TITLE": "Sair",
+
+  "CHALLENGE_CHOOSE_PHOTO": "Escolha uma foto",
+  "CHALLENGE_WORKTYPE": "Tipo de Trabalho",
+  "CHALLENGE_SUPERMARKET": "Rede",
+  "CHALLENGE_BRAND": "Marca",
+  "CHALLENGE_STORE": "Loja",
+  "CHALLENGE_CHECKBOX": "Publicar no PROmov Club",
+
+  "CHALLENGE_BUTTON": "Publicar",
+
+
+  "FEED_LIKES": "Curtidas",
+  "FEED_COMMENTS": "Comentarios",
+
+  "PERFIL_MEMBER": "Membro desde",
+  "PERFIL_LEVEL": "Nível",
+  "PERFIL_POSITION": "Posição",
+  "PERFIL_POINTS": "Seus pontos",
+  "PERFIL_LEVEL_0": "Futuro Rock Star",
+
+
+
+  "CONFIG_LANGUAGE": "Lingua",
+  "M_JAN": "Jan",
+  "M_FEB": "Fev",
+  "M_MAR": "Mar",
+  "M_APRIL": "Abril",
+  "M_May": "Maio",
+  "M_JUNE": "Jun",
+  "M_JULY": "Jul",
+  "M_AUGUST": "Ago",
+  "M_SEPTEMBER": "Set",
+  "M_OCTOBER": "Out",
+  "M_NOVEMBER": "Nov",
+  "M_DECEMBER": "Dez",
+
+
+
+  "BACK_BUTTON_TEXT": "Voltar"
+}

@@ -1,0 +1,26 @@
+<ion-menu [content]="content">
+  <ion-header>
+      <ion-avatar>
+        <img [src]="userPhoto" class="menu-avatar">
+      </ion-avatar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
+      <div>
+        <ion-icon name="{{p.icone}}" item-start color="{{p.color}}"></ion-icon>{{p.title | translate}}
+    </div>
+
+      </button>
+    </ion-list>
+
+    <button menuClose ion-item no-lines detail-none class="menu-logout" (click)="logoutFacebook()">
+        <ion-icon name="ios-log-out" item-start></ion-icon>{{'LOGOUT_TITLE' | translate}}
+    </button>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

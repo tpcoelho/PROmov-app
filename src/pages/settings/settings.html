@@ -1,0 +1,21 @@
+<ion-header>
+   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ 'CONFIG_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label>{{ 'CONFIG_LANGUAGE' | translate }}</ion-label>
+        <ion-select [(ngModel)]="lingua" (ionChange)="changeLanguage(lingua)">
+          <ion-option value="pt-br">Português</ion-option>
+          <ion-option value="en">English</ion-option>
+          <ion-option value="es">Español</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+</ion-content>

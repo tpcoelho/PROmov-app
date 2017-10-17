@@ -1,0 +1,42 @@
+page-perfil {
+	.pefil_content{
+		background-color: color($colors, black, base);
+		color: white;
+	}
+
+	.perfil_header{
+		display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  margin-top: 1rem;
+	  margin-bottom: 1rem;
+	}
+	.perfil__img{
+		margin-bottom: 1rem;
+		border-radius: 2rem;
+
+	}
+
+	.perfil_nome{
+		display: flex;
+	  flex-direction: column;
+	  align-items: center;
+
+	}
+	.perfil_nome > span:first-child{
+		font-weight: bold;
+	}
+
+	.perfil_rank > span:last-child{
+		font-weight: bold;
+	}
+
+	.perfil_rank_item{
+		display: flex;
+	}
+
+	.item_text h2{
+		font-weight: bold;
+		color: color($colors, orange, base);
+	}
+}

@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-buttons right>
+      <button color="light" ion-button clear icon-only (click)="dismiss()">
+          <ion-icon name="close-circle"></ion-icon>
+      </button>
+  </ion-buttons> 
+</ion-header>
+<ion-content class="modal_content">
+  <form (ngSubmit)="publicarPost()">
+    <div class="button-photo">
+      <img *ngIf="selectedImg; else falsyTemplate" src="{{imgPreview}}" alt="" on-tap="openPhotoLibrary()">
+      <!-- <img *ngIf="postpdv.photo; else falsyTemplate" src="{{pathForImage(lastImage)}}" on-tap="openPhotoLibrary()"> -->
+      <ng-template #falsyTemplate>
+      <div class="profile-image-placeholder">
+        <ion-icon id="pdv_photo" name="images" on-tap="openCam()"></ion-icon>
+      </div>
+      <label for="pdv_photo" on-tap="openPhotoLibrary()">{{ 'CHALLENGE_CHOOSE_PHOTO' | translate }}</label>
+
+      </ng-template>
+    </div>
+    <div padding class="pdv-form">
+      <div class="pdv-form__item">
+        <label for="type">{{ 'CHALLENGE_WORKTYPE' | translate }}</label>
+        <div class="pdv-form__input">
+            <ion-icon class="pdv-form__icon" name="md-arrow-dropright"></ion-icon>
+            <input id="type" name="type" type="text" placeholder="ex: Ponto Extra" [(ngModel)]="postpdv.type"/>
+        </div>
+      </div>
+      <div class="pdv-form__item">
+        <label for="supermarket">{{ 'CHALLENGE_SUPERMARKET' | translate }}</label>
+        <div class="pdv-form__input">
+            <ion-icon class="pdv-form__icon" name="md-arrow-dropright"></ion-icon>
+            <input id="supermarket" name="supermarket" type="text" placeholder="ex: Walmart" [(ngModel)]="postpdv.supermarket"/>
+        </div>
+      </div>
+      <div class="pdv-form__item">
+        <label for="brand">{{ 'CHALLENGE_BRAND' | translate }}</label>
+        <div class="pdv-form__input">
+            <ion-icon class="pdv-form__icon" name="md-arrow-dropright"></ion-icon>
+            <input id="brand" name="brand" type="text" placeholder="ex: Nestlé" [(ngModel)]="postpdv.brand"/>
+        </div>
+      </div>
+      <div class="pdv-form__item">
+        <label for="store">{{ 'CHALLENGE_STORE' | translate }}</label>
+        <div class="pdv-form__input">
+            <ion-icon class="pdv-form__icon" name="md-arrow-dropright"></ion-icon>
+            <input id="store" name="store" type="text" placeholder="ex: Big - Iguatemi" [(ngModel)]="postpdv.store"/>
+        </div>
+      </div>
+      <div class="pdv-form__checkbox">
+        <input type="checkbox" value="" name="isChallenge" id="isChallenge" [(ngModel)]="postpdv.isChallenge"/>
+        <label for="isChallenge">{{ 'CHALLENGE_CHECKBOX' | translate }}</label>
+      </div>
+      <button type="submit" id="publicar-button" class="pdv-form__submit">
+        {{ 'CHALLENGE_BUTTON' | translate }}
+      </button>
+    </div>   
+  </form>
+</ion-content>
+

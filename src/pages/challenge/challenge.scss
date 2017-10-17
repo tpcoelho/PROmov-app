@@ -1,0 +1,44 @@
+page-challenge {
+	.content-challenge{
+		display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+
+	.challenge-photo{
+		height: 300px;
+	}
+	
+	.challenge-info{
+		display: flex;
+	  margin-left: 1rem;
+	}
+
+	.challenge-icon{
+		margin-right: 1rem;
+	}
+
+	.challenge-text > span:last-child{
+		display: flex;
+		flex-direction: column;
+		font-weight: bold;
+	}
+
+	.challenge-buttons{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.challenge-buttons > button:first-child
+	{
+	    flex: 1 3 0;
+	}
+
+	.challenge-buttons > button
+	{
+	    flex: 0 2 0;
+	}
+
+}

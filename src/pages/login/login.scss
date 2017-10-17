@@ -1,0 +1,61 @@
+page-login {
+	.splash-bg {
+    position: relative;
+    background: url('../assets/img/bg_login.jpg') no-repeat transparent;
+    background-size: cover;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+  .splash-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+  .splash-intro {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+
+  }
+  .splash-logo {
+    margin: auto;
+    margin-top: 4rem;
+    background: url('../assets/img/Logo_branco.png');
+    background-size: 100%;
+    width: 170px;
+    height: 290px;
+  }
+  .splash-c-button {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .splash-button {
+    background: linear-gradient(to left, #000080 0%, #1E90FF 100%);
+  }
+  .splash-icon-fb {
+    margin-left: 1rem;
+  }
+  .splash-termos {
+    font-size: 10px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+
+  }
+}
