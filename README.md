@@ -1,9 +1,8 @@
 # App PROmov
 App desenvolvido durante o GAMA XP#9 - Florianópolis para o estudo de caso da Involves.
 
-[Feed](imgGit/IMG_8146.PNG)
-[Menu](imgGit/IMG_8147.PNG)
-[Perfil](imgGit/IMG_8148.PNG)
+<img src="imgGit/IMG_8146.PNG" width="200" height="300">      <img src="imgGit/IMG_8147.PNG" width="200" height="300">      <img src="imgGit/IMG_8148.PNG" width="200" height="300">
+
 ### With the Ionic CLI:
 ```bash
 $ npm install
